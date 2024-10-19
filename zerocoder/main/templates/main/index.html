@@ -1,0 +1,61 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}
+    <title>Первая страница на Djanga</title>
+{% endblock %}
+{% block content %}
+
+    <div class="jumbotron text-center bg-white">
+        <h1 class="display-4">Добро пожаловать в удивительный мир хорьков!</h1>
+        <p class="lead">Откройте для себя этих игривых и любознательных животных, которые могут стать настоящими друзьями и приносить радость в повседневную жизнь.</p>
+    </div>
+
+    <div id="why-ferrets" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Почему хорьки такие особенные?</h2>
+                <p>Хорьки - это активные, любознательные и очень дружелюбные питомцы. Они любят играть, исследовать окружающий мир и делиться своим хорошим настроением с хозяевами. Хорьки способны сделать каждый день ярче и интереснее!</p>
+                <p>Их озорной характер и постоянное желание учиться делают их отличными компаньонами для тех, кто любит активные игры и веселые моменты. Если вы хотите питомца, который будет дарить вам радость каждый день, хорек - прекрасный выбор.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'main/img/img_1.png' %}" alt="Любопытный хорек" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'main/img/img_2.png' %}" alt="Хорек спит">
+                    <div class="card-body">
+                        <h5 class="card-title">Сон хорьков</h5>
+                        <p class="card-text">Хорьки - настоящие любители поспать, они могут спать до 18 часов в сутки. Но когда они бодрствуют, их энергия бьет ключом!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'main/img/img_3.png' %}" alt="Хорек ест">
+                    <div class="card-body">
+                        <h5 class="card-title">Питание хорьков</h5>
+                        <p class="card-text">Для хорьков важно правильное питание. Узнайте, чем кормить вашего хорька, чтобы он оставался здоровым и счастливым.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'main/img/img_4.png' %}" alt="Хорек играет">
+                    <div class="card-body">
+                        <h5 class="card-title">Игры и активности</h5>
+                        <p class="card-text">Хорьки обожают играть и изучать новые вещи. Мы предлагаем идеи для игр и тренировок, которые помогут вашему хорьку развиваться и быть счастливым.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
