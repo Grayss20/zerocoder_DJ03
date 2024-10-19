@@ -8,6 +8,7 @@
     <div class="container mt-5">
         <h1 class="text-center">Страница для добавления новости</h1>
 
+
         <div class="card mt-4">
             <div class="card-header">
                 <h2 class="text-center">Форма для добавления новости</h2>
@@ -17,39 +18,37 @@
                     {% csrf_token %}
                     <!-- Title -->
                     <div class="mb-3">
-                        <label for="title" class="form-label">Заголовок новости</label>
-                        <input type="text" class="form-control" id="title" placeholder="Введите заголовок новости">
+                        {{ form.title }}
                     </div>
 
                     <!-- Short Description -->
                     <div class="mb-3">
-                        <label for="shortDescription" class="form-label">Краткое описание новости</label>
-                        <input type="text" class="form-control" id="shortDescription" placeholder="Введите краткое описание новости">
+                        {{ form.short_description }}
                     </div>
 
                     <!-- News Text -->
                     <div class="mb-3">
-                        <label for="newsText" class="form-label">Новость</label>
-                        <textarea class="form-control" id="newsText" rows="4" placeholder="Введите текст новости"></textarea>
+                        {{ form.text }}
                     </div>
 
                     <!-- Date -->
                     <div class="mb-3">
-                        <label for="newsDate" class="form-label">Дата публикации</label>
-                        <input type="date" class="form-control" id="newsDate">
+                        {{ form.pub_date }}
                     </div>
 
-                    <!-- Time -->
+                    <!-- Time
                     <div class="mb-3">
                         <label for="newsTime" class="form-label">Время публикации</label>
                         <input type="time" class="form-control" id="newsTime">
                     </div>
+                    -->
 
                     <!-- Submit Button -->
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary btn-block">Добавить новость</button>
                     </div>
                 </form>
+                <p> {{error}} </p>
             </div>
         </div>
     </div>

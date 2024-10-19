@@ -6,7 +6,7 @@ class NewsPost(models.Model):
     title = models.CharField('Название новости', max_length=50)
     short_description = models.CharField('Краткое описание', max_length=200)
     text = models.TextField('Новость')
-    pub_date = models.DateTimeField('дата публикации')
+    pub_date = models.DateTimeField('Дата публикации')
     author = models.ForeignKey(User, on_delete=models.CASCADE, default=1,
                                verbose_name='Автор')  # Replace 1 with the ID of the default user
 
